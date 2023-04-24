@@ -1,7 +1,7 @@
 # **homelab_2023**
 # my setup: Proxmox -> debian VM (docker containers) -> services (Traefik, Cloudflare, OAuth, Portainer, Homepage, Jellyfin, ...)
 
-## install docker
+## DebianVM/Docker_host - install docker
 ```
 # uninstall old version
 sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -16,6 +16,8 @@ sudo usermod -aG docker <user>
 # install docker compose plugin
 sudo apt-get update
 sudo apt-get install docker-compose-plugin
+
+# turn on firewall to block everything except 443, 80, 22
 ```
 
 ## create docker file and services
@@ -111,7 +113,7 @@ CF_API_TOKEN=your-token
 ## traefik service (credit: [traefik-docker-compose-guide-2022](https://www.smarthomebeginner.com/traefik-docker-compose-guide-2022/))
 - cloudflare Domain, add A & CNAME records
 - port forward traefik 80 & 443 on router
-- Note:
+> Note:
   - chmod 600 for acme.json
   - Access the site from same network as the docker-traefik container might not work → comment out staging certs line & turn on cloudflare proxy for the 2 records above
 ```
