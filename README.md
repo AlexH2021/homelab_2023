@@ -66,7 +66,7 @@ CF_API_TOKEN=your-token
 - **TLS 1.3: ON**
 - **Automatic HTTPS Rewrites: ON**
 - **Certificate Transparency Monitoring: ON**
-- 
+
 ### Firewall Rules: add any region/IP you want to allow/block
 
 ### Firewall Settings
@@ -74,17 +74,17 @@ CF_API_TOKEN=your-token
 - **Bot Fight Mode: ON**
 - **Challenge Passage: 30 Minutes**
 - **Browser Integrity Check: ON**
-- 
+
 ### Speed: Optimization
 - **Auto Minify: OFF**
 - **Brotli: ON**
 - **Rocket Loader: OFF**
-- 
+
 ### Caching Configuration
 - **Caching Level: Standard**
 - **Browser Cache TTL: 1 hour**
 - **Always Online: OFF**
-- 
+
 ### Page Rules
 ![cloudflare page rules](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9c4172ab-b15b-410b-85c7-d0f23ed89d93/Untitled.png)
 - first one turn off SSL when Traefik tries to fetch LetsEncrypt SSL certs
