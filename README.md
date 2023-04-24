@@ -50,7 +50,7 @@ CF_API_TOKEN=your-token
 ### high level view
 ![cloudflare and traefik](https://user-images.githubusercontent.com/33076940/233897278-90d8b818-1036-489b-a8ad-b8e09ed09cd9.png)
 ### DNS entries (turn off proxy orange for testing first)
-![cloudflare DNS entries](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/be89ff02-34ac-4f22-a3e6-19d94a90ed99/Untitled.png)
+![cloudflare DNS entries]([https://s3-us-west-2.amazonaws.com/secure.notion-static.com/be89ff02-34ac-4f22-a3e6-19d94a90ed99/Untitled.png](https://file.notion.so/f/s/be89ff02-34ac-4f22-a3e6-19d94a90ed99/Untitled.png?id=0b233128-98b0-431e-8bce-e0a2f376f0d1&table=block&spaceId=614b6291-41d9-4f52-9e1e-cea413e4f8c1&expirationTimestamp=1682396240360&signature=siArZH8X73cyv2f43DeOYqPtKDG7MSTfVKIU2FF-Zrs&downloadName=Untitled.png))
 ### SSL/TLS Options: Full Strict
 ### Edge Certificates
 - **Always Use HTTPS: ON**
