@@ -49,9 +49,13 @@ CF_API_TOKEN=your-token
 ## cloudflare tunnel service
 ### high level view
 ![cloudflare and traefik](https://user-images.githubusercontent.com/33076940/233897278-90d8b818-1036-489b-a8ad-b8e09ed09cd9.png)
+
 ### DNS entries (turn off proxy orange for testing first)
 ![cloudflare DNS entries](https://file.notion.so/f/s/be89ff02-34ac-4f22-a3e6-19d94a90ed99/Untitled.png?id=0b233128-98b0-431e-8bce-e0a2f376f0d1&table=block&spaceId=614b6291-41d9-4f52-9e1e-cea413e4f8c1&expirationTimestamp=1682396240360&signature=siArZH8X73cyv2f43DeOYqPtKDG7MSTfVKIU2FF-Zrs&downloadName=Untitled.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/be89ff02-34ac-4f22-a3e6-19d94a90ed99/Untitled.png)
+
 ### SSL/TLS Options: Full Strict
+
 ### Edge Certificates
 - **Always Use HTTPS: ON**
 - **HTTP Strict Transport Security (HSTS): Enable**
@@ -60,20 +64,25 @@ CF_API_TOKEN=your-token
 - **TLS 1.3: ON**
 - **Automatic HTTPS Rewrites: ON**
 - **Certificate Transparency Monitoring: ON**
+- 
 ### Firewall Rules: add any region/IP you want to allow/block
+
 ### Firewall Settings
 - **Security Level: High**
 - **Bot Fight Mode: ON**
 - **Challenge Passage: 30 Minutes**
 - **Browser Integrity Check: ON**
+- 
 ### Speed: Optimization
 - **Auto Minify: OFF**
 - **Brotli: ON**
 - **Rocket Loader: OFF**
+- 
 ### Caching Configuration
 - **Caching Level: Standard**
 - **Browser Cache TTL: 1 hour**
 - **Always Online: OFF**
+- 
 ### Page Rules
 ![cloudflare page rules](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9c4172ab-b15b-410b-85c7-d0f23ed89d93/Untitled.png)
 - first one turn off SSL when Traefik tries to fetch LetsEncrypt SSL certs
