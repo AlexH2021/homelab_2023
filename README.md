@@ -1,5 +1,5 @@
 # **homelab_2023**
-# docker containers
+# my setup: Proxmox -> debian VM (docker containers) -> services (Traefik, Cloudflare, OAuth, Portainer, Homepage, Jellyfin, ...)
 
 ## install docker
 ```
@@ -26,7 +26,21 @@ docker network create frontend
 ```
 
 ## cloudflare tunnel service
-![](https://file.notion.so/f/s/70d85704-c12b-4f62-9a50-5f6ddae52c8d/Untitled.png?id=415b738a-6f25-4652-9543-44e0ffaad40a&table=block&spaceId=614b6291-41d9-4f52-9e1e-cea413e4f8c1&expirationTimestamp=1682394195859&signature=XXlcyVS9Ph3tlY3_nlTX4Iw50MXFJ4oncYpbrkCfRB8&downloadName=Untitled.png)
+### high level view
+![cloudflare and traefik](https://user-images.githubusercontent.com/33076940/233897278-90d8b818-1036-489b-a8ad-b8e09ed09cd9.png)
+
+### DNS entries (turn off proxy orange for testing first)
+![cloudflare DNS entries](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/baef43c2-9803-4d1d-98ac-6444616b68c7/Untitled.png)
+### SSL/TLS Options: Full Strict
+### Edge Certificates
+- **Always Use HTTPS: ON**
+- **HTTP Strict Transport Security (HSTS): Enable**
+- **Minimum TLS Version: 1.2**
+- **Opportunistic Encryption: ON**
+- **TLS 1.3: ON**
+- **Automatic HTTPS Rewrites: ON**
+- **Certificate Transparency Monitoring: ON**
+
 ```
 wait here
 ```
